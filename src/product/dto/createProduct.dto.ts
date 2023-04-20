@@ -9,16 +9,7 @@ import {
 } from 'class-validator';
 import { CharacteristicsDTO } from './characteristics.dto';
 import { ImagesDTO } from './images.dto';
-
-type characteristicsType = {
-  name: string;
-  description: string;
-};
-
-type imagesType = {
-  url: string;
-  description: string;
-};
+import { characteristicsType, imagesType } from '../types/productType';
 
 export class CreateProductDTO {
   @IsNotEmpty()
